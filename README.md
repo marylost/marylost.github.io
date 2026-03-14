@@ -50,6 +50,15 @@ https:
 
 ---
 
+## Preview
+
+![Portfolio Preview](assets/images/og-image.jpg)
+<p align="center">
+  <img src="assets/images/og-image.jpg" width="900">
+</p>
+
+---
+
 ## Built With
 
 This project was built using the following technologies:
