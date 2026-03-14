@@ -52,7 +52,7 @@ Each version contains:
 The portfolio is published online using GitHub Pages.
 
 Website:
-https:
+https://marylost.github.io/
 
 ---
 
@@ -126,8 +126,7 @@ LinkedIn: www.linkedin.com/in/maria-lostorto
 
 Behance: [your-behance](https://www.behance.net/marialostorto)
 
-Project Repository:
-https:
+Project: https://marylost.github.io/
 
 ---
 
