@@ -1,0 +1,173 @@
+// ============================================================
+// COMPONENTS / FORM
+// ============================================================
+
+.form-section {
+  padding: 36px 16px;
+  box-sizing: border-box;
+
+  @include desktop { padding: 52px 150px 0; }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 500px;
+  margin: 0 auto;
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    align-items: start;
+    max-width: 1440px;
+  }
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+  text-align: center;
+
+  @include desktop {
+    gap: 22px;
+    margin-bottom: 0;
+    align-self: start;
+    text-align: left;
+  }
+}
+
+.form-title {
+  font-family: $font-display;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 600;
+  color: $secondary-500;
+  margin: 0;
+
+  @include desktop { font-size: 36px; line-height: 44px; }
+}
+
+.form-text {
+  font-family: $font-body;
+  font-size: 16px;
+  line-height: 26px;
+  color: $black;
+  margin: 0;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include desktop { gap: 22px; }
+}
+
+.honeypot { display: none; visibility: hidden; }
+
+.form-group { position: relative; }
+
+.form-control {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $tertiary-50;
+  border: 0.6px solid transparent;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-family: $font-body;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: $neutral-900;
+  outline: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 6px 7px 15px rgba(163, 99, 75, 0.34);
+
+  &:hover,
+  &:focus {
+    background-color: $primary-50;
+    border: 0.6px solid $primary-500;
+    box-shadow: 6px 7px 15px rgba(163, 99, 75, 0.34);
+  }
+
+  &:focus { border: 1px solid $secondary-500; }
+
+  &:not(:placeholder-shown) {
+    background-color: $primary-50;
+    border: 1px solid $secondary-500;
+  }
+
+  &:focus + .form-label,
+  &:not(:placeholder-shown) + .form-label {
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 11px;
+    color: $secondary-500;
+    background-color: $primary-50;
+    padding: 0 4px;
+  }
+
+  @include desktop { font-size: 14px; line-height: 22px; letter-spacing: 0.01em; }
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-family: $font-body;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: $neutral-500;
+  background-color: transparent;
+  padding: 0 4px;
+  pointer-events: none;
+  transition: top 0.2s ease, transform 0.2s ease, font-size 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+
+  @include desktop { font-size: 14px; line-height: 22px; letter-spacing: 0.01em; }
+}
+
+.form-group:has(textarea) {
+  .form-label { top: 18px; transform: none; }
+
+  .form-control:focus + .form-label,
+  .form-control:not(:placeholder-shown) + .form-label {
+    top: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+  font-size: 12px;
+}
+
+.btn-submit {
+  align-self: flex-end;
+  margin-top: calc(36px - 16px);
+  text-decoration: none;
+  display: inline-block;
+
+  @include desktop { margin-top: calc(30px - 22px); }
+}
+
+.form-status {
+  font-family: $font-body;
+  font-size: 14px;
+  line-height: 22px;
+  min-height: 22px;
+  margin: 0;
+
+  &.success { color: $success-500; }
+  &.error   { color: $error-500; }
+}

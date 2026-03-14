@@ -1,0 +1,27 @@
+// ============================================================
+// ABSTRACTS / MIXINS
+// ============================================================
+
+// Breakpoint desktop
+@mixin desktop {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+}
+
+// Ridotto moto
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
+
+// Transizione generica
+@mixin transition($props: all, $duration: 0.3s, $easing: ease) {
+  transition: $props $duration $easing;
+}
+
+// Shadow card portfolio/beyond
+@mixin card-shadow {
+  box-shadow: 6px 7px 15px rgba(163, 99, 75, 0.6);
+}

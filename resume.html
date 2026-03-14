@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="robots" content="index, follow">
+      <meta name="description" content="Resume|Curriculum di Maria Lostorto">
+
+      <title>Resume | Portfolio Maria Lostorto</title>
+
+        <!-- Google Fonts con preload -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap">
+
+      <link rel="stylesheet" href="src/vendor/bootstrap-grid.css"> <!--questo è la grid di bootstrap-->
+      <link rel="stylesheet" href="dist/css/style.css">  <!--questo è il collegamento al file css-->
+      
+      
+      <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+      <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+      <link rel="manifest" href="assets/favicon/site.webmanifest" /> <!--questo è la favicon-->
+
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://marylost.github.io/Portfolio-di-Maria-Lostorto/resume.html">
+      <meta property="og:title" content="Resume | Maria Lostorto">
+      <meta property="og:description" content="Maria Lostorto | Designer Junior. Creatività, empatia e tecnologia al servizio dell'utente.">
+      <meta property="og:image" content="https://marylost.github.io/Portfolio-di-Maria-Lostorto/assets/images/og-image.jpg">
+      <meta property="og:image:alt" content="Maria Lostorto – Junior UX/UI Designer Resume">
+
+  </head>
+
+<body class="resume-page">
+
+        <!-- Navbar -->
+        <header class="site-header">
+        <nav class="navbar" role="navigation" aria-label="Navigazione principale">
+            <div class="navbar-inner">
+
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand" aria-label="Vai alla home">
+            <img 
+                src="assets/images/logo/logo.svg" 
+                alt="Logo Maria Lostorto"
+                class="nav-logo"
+            >
+        </a>
+
+        <!-- Checkbox nascosto per CSS menu hack (no JS) -->
+        <input type="checkbox" id="menu-toggle" class="navbar-checkbox">
+
+        <!-- Hamburger menu (mobile) -->
+        <label
+          class="navbar-toggle"
+          for="menu-toggle"
+          aria-label="Apri menu">
+          <img 
+            src="assets/images/icons/menu_hamburger.svg" alt="" class="icon-hamburger">
+          <img 
+            src="assets/images/icons/cross.svg" 
+            alt="" class="icon-close">
+        </label>
+
+        <!-- Menu -->
+            <div class="navbar-menu" id="navbar-menu" aria-hidden="true">
+                
+                <ul class="navbar-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html" aria-current="page">Resume</a></li>
+                    <li><a href="about-contact.html">About &amp; Contact</a></li>
+                </ul>
+
+                <!-- Language switch -->
+                <div class="lang-switch" role="navigation" aria-label="Selezione lingua">
+                    <img src="assets/images/icons/world.svg" alt="" aria-hidden="true">
+                    <a href="resume.html" class="lang lang-it is-active">IT</a>
+                    <span class="divider" aria-hidden="true">|</span>
+                    <a href="resume-en.html" class="lang lang-en">EN</a>
+                </div>
+
+            </div>
+            </div>
+        </nav>
+        </header>
+    
+    <main id="main">
+        <!-- Hero -->
+         <section class="hero">
+
+            <div class="container">
+                <h1 class="hero-title">Maria Lostorto <br> UX / UI Designer junior</h1>
+                <p class="hero-text">UX/UI Designer con un background orientato alle persone e ai contesti reali, oggi applicato alla progettazione di esperienze digitali accessibili e consapevoli.</p>
+            </div>
+
+            <div class="hero-image">
+                <picture>
+                    <source srcset="assets/images/hero_resume_desktop.webp" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="assets/images/hero_resume_mobile.webp" type="image/webp">
+                    <source srcset="assets/images/hero_resume_desktop.png" media="(min-width: 992px)">
+                    <img src="assets/images/hero_resume_mobile.png" alt="Immagine di copertina del Resume di Maria Lostorto" class="img-hero" fetchpriority="high">
+                </picture>
+            </div>
+
+            <div class="hero-actions">
+                <a href="assets/docs/CV_maria_lostorto.pdf" download="CV_Maria_Lostorto.pdf" class="btn btn-primary">Download CV</a>
+            </div>
+
+        </section>
+
+    <!-- Layout a due colonne (desktop) -->
+    <div class="resume-two-column-wrapper">
+
+        <!-- COLONNA SINISTRA -->
+        <div class="resume-column-left">
+
+            <!-- Skills -->
+                <section class="skills">
+                    <div class="container">
+                        <h2 class="section-title">Skills</h2>
+
+                        <h3 class="section-subtitle">Design</h3>
+                        <ul class="skills-list">
+                            <li>Design & Prototyping</li>
+                            <li>Graphic & Visual</li>
+                            <li>AI - assisted workflow</li>
+                            <li>Basic knowledge of HTML & CSS</li>
+                        </ul>
+
+                        <h3 class="section-subtitle">Trasversali</h3>
+                        <ul class="skills-list">
+                            <li>Problem solving</li>
+                            <li>Customer experience</li>
+                            <li>Team work</li>
+                            <li>Adattabilità a contesti multiculturali</li>
+                        </ul>
+
+                    </div>
+                </section>
+
+            <!-- Educazione -->
+                <section class="education">
+                    <div class="container">
+                        <h2>Educazione</h2>
+    
+                        <ul class="timeline">
+
+                            <li>
+                            <article class="timeline-item">
+                                <header>
+                                    <h3>Start2Impact</h3>
+                                    <span datetime="2026">in corso</span>
+                                </header>
+                                <p>Master professionalizzante in UI/UX Design e agenti AI</p>
+                            </article>
+                            </li>
+
+                            <li>
+                            <article class="timeline-item">
+                                <header>
+                                    <h3>UNIMOL - Università del Molise</h3>
+                                    <span datetime="2023">2023</span>
+                                </header>
+                                <p>Laurea triennale in Scienza del Turismo</p>
+                            </article>
+                            </li>
+
+                            <li>
+                            <article class="timeline-item">
+                                <header>
+                                    <h3>Diploma professionale - Indirizzo Ospitalità</h3>
+                                    <span datetime="2016">2016</span>
+                                </header>
+                                <p>Diploma professionale presso il "Convitto Nazionale Statale R. Bonghi" Lucera (FG)</p>
+                            </article>
+                            </li>
+                        </ul>
+
+                    </div>
+                </section>
+
+            <!-- Lavori/Volontariato -->
+                <section class="experience">
+                    <div class="container">
+                        <h2>Esperienze professionali & volontariato</h2>
+        
+                        <ul class="timeline">
+
+                            <li>
+                                <article class="timeline-item">
+                                    <header>
+                                        <h3>Pasticceria Casoli</h3>
+                                    </header>
+                                </article>
+
+                                <div class="meta">
+                                    <p>Addetta al banco</p>
+                                    <time datetime="2024">in corso</time>
+                                </div>
+                            </li>
+
+                            <li>
+                                <article class="timeline-item">
+                                    <header>
+                                        <img src="assets/images/icons/hands.svg" alt="" aria-hidden="true" class="icon-volunteer">
+                                        <h3>Festival della cultura Ebraica</h3>
+                                    </header>
+                                </article>
+
+                                <div class="meta">
+                                    <p>Volontaria nell'ambito del Corpo Europeo di Solidarietà</p>
+                                    <time datetime="2024">KRK(PL) 25/05-12/06/24</time>
+                                </div>
+                            </li>
+
+                            <li>
+                                <article class="timeline-item">
+                                    <header>
+                                        <img src="assets/images/icons/hands.svg" alt="" aria-hidden="true" class="icon-volunteer">
+                                        <h3>Biblioteca Rajska</h3>
+                                    </header>
+                                </article>
+
+                                <div class="meta">
+                                    <p>Volontaria ESC come Insegnante di italiano e inglese</p>
+                                    <time datetime="2023">KRK(PL) 10/2023-03/2024</time>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <article class="timeline-item">
+                                    <header>
+                                        <h3>Victor Mixology Bar</h3>
+                                    </header>
+                                </article>
+
+                                <div class="meta">
+                                    <p>Bartender</p>
+                                    <time datetime="2019">Termoli(CB) 05/2019-09/2019</time>
+                                </div>
+                            </li>
+                        
+                            <li>
+                                <article class="timeline-item">
+                                    <header>
+                                        <h3>Coccobill Bar Gelateria</h3>
+                                        <span class="location">Termoli(CB)</span>
+                                    </header>
+                                </article>
+
+                                <ul class="job-details">
+                                    <li>
+                                        <span class="role">Manager del personale</span>
+                                        <time datetime="2018">04/2018 - 09/2018</time>
+                                    </li>
+
+                                    <li>
+                                        <span class="role">Banconista</span>
+                                        <time datetime="2017">05/2017 - 09/2017</time>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+
+        </div>        
+
+        <!-- LINEA DIVISORIA (solo desktop) -->
+        <div class="resume-divider" aria-hidden="true"></div>
+
+        <!-- COLONNA DESTRA -->
+        <div class="resume-column-right">
+
+            <!-- Contatti -->
+                <section class="contact" id="contact">
+                    <div class="container">
+                        <h2>Contatti</h2>
+
+                        <ul class="contact-list">
+                            <li>
+                                <a href="mailto:marialostorto97@outlook.it" class="contact-link">                            
+                                    <img src="assets/images/icons/mail.svg" alt="" aria-hidden="true" class="contact-icon">
+                                    <span>marialostorto97@outlook.it</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.linkedin.com/in/maria-lostorto/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                    <img src="assets/images/icons/linkedin_resume.svg" alt="" aria-hidden="true" class="contact-icon">
+                                    <span>linkedin.com/in/maria-lostorto</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.behance.net/marialostorto" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                    <img src="assets/images/icons/eye.svg" alt="" aria-hidden="true" class="contact-icon">
+                                    <span>Mostra progetti</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        
+            <!-- Strumenti -->
+            <section class="tools" id="tools">
+                    <h2>Strumenti</h2>
+                    <div class="tools-container">
+                        <img src="assets/images/icons/strumenti/adobe_illustrator.svg" alt="Adobe Illustrator Icon" class="tool-icon">
+                        <img src="assets/images/icons/strumenti/adobe_photoshop.svg" alt="Adobe Photoshop Icon" class="tool-icon">
+                        <img src="assets/images/icons/strumenti/figma.svg" alt="Figma Icon" class="tool-icon">
+                        <img src="assets/images/icons/strumenti/whimsical.svg" alt="Whimsical Icon" class="tool-icon">
+                    </div>
+            </section>
+
+            <!-- Lingue -->
+            <section class="languages">
+                    <h2>Lingue</h2>
+                    <ul class="languages-list">
+                        <li>
+                            <span class="language-name">Italiano</span>
+                            <span class="language-level">Nativo</span>
+                        </li>
+                        <li>
+                            <span class="language-name">Inglese</span>
+                            <span class="language-level">Intermedio (B2 +)</span>
+                        </li>
+                        <li>
+                            <span class="language-name">Spagnolo</span>
+                            <span class="language-level">Base (A1)</span>
+                        </li>
+                    </ul>
+            </section>
+
+            <!-- Principi -->
+            <section class="principles">
+                    <h2>Principi UX che seguo nella progettazione</h2>
+
+                    <ol class="principles-list">
+                        <li>Io non sono l'utente</li>
+                        <li>La ricerca guida il design</li>
+                        <li>Iterare per evolvere</li>
+                        <li>L'accessibilità non è facoltativa</li>
+                    </ol>
+            </section>
+
+            <!--cta-->
+            <section class="cta">
+                <a href="mailto:marialostorto97@outlook.it?subject=Richiesta%20collaborazione" 
+                    class="btn btn-primary" 
+                    aria-label="Invia un'email a Maria Lostorto per iniziare una collaborazione">
+                    INIZIA UNA CONVERSAZIONE
+                </a>
+            </section>
+        </div>
+
+    </div>
+      
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+       <div class="footer-header">
+
+          <!-- Logo -->
+          <a href="index.html" class="footer-logo" aria-label="Vai alla home">
+            <img
+              src="assets/images/logo/logo.svg"
+              alt="Logo Maria Lostorto"
+            >
+          </a>
+
+            <!-- Social links -->
+            <div class="footer-socials">
+              <a
+                href="https://www.linkedin.com/in/maria-lostorto"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo LinkedIn">
+                <img src="assets/images/icons/linkedin_footer.svg" alt="LinkedIn" class="icon">
+              </a>
+
+              <a
+                href="https://www.behance.net/marialostorto"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo Behance">
+                <img src="assets/images/icons/behance.svg" alt="Behance" class="icon icon-behance"> 
+              </a>
+
+              <a
+                href="https://github.com/marylost" 
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo GitHub">
+                <img src="assets/images/icons/github.svg" alt="GitHub" class="icon">
+              </a> 
+
+              <a
+                href="https://www.instagram.com/maria_lost_/"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo Instagram">
+                <img src="assets/images/icons/instagram.svg" alt="Instagram" class="icon">
+              </a>
+            </div>
+       </div>
+
+        <!-- Divider -->
+        <hr class="footer-divider" aria-hidden="true">
+
+        <p class="footer-copyright">
+          © 2026 Maria Lostorto. All rights reserved.
+          </p>	
+      </div>
+    </footer>
+
+    <!--Link a JS-->
+    <script src="src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      <meta name="description" content="Portfolio di Maria Lostorto">
+
+      <title>Home | Portfolio Maria Lostorto</title>
+
+      <!-- Google Fonts con preload -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap">
+
+      <link rel="stylesheet" href="src/vendor/bootstrap-grid.css"> <!--questo è la grid di bootstrap-->
+      <link rel="stylesheet" href="dist/css/style.css">  <!--questo è il collegamento al file css-->
+      
+      
+      <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+      <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+      <link rel="manifest" href="assets/favicon/site.webmanifest" />  <!--questo è la favicon-->
+
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://marylost.github.io/Portfolio-di-Maria-Lostorto/index.html">
+      <meta property="og:title" content="Maria Lostorto | Portfolio Designer">
+      <meta property="og:description" content="Esplora i miei progetti di design e sviluppo web. Progetto esperienze digitali inclusive, in cui tecnologia e umanità si incontrano.">
+      <meta property="og:image" content="https://marylost.github.io/Portfolio-di-Maria-Lostorto/assets/images/og-image.jpg">
+      <meta property="og:image:alt" content="Maria Lostorto – Junior UX/UI Designer Portfolio">
+
+  </head>
+
+  <body class="home-page"> 
+    
+    <!-- Navbar -->
+    <header class="site-header">
+      <nav class="navbar" role="navigation" aria-label="Navigazione principale">
+          <div class="navbar-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="navbar-brand">
+          <img 
+              src="assets/images/logo/logo.svg" 
+              alt="Logo Maria Lostorto"
+              class="nav-logo"
+          >
+      </a>
+
+      <!-- Hamburger menu (mobile) -->
+
+          <!-- java <button 
+          class="navbar-toggle" 
+          type="button"
+          aria-label="Apri menu"
+          aria-expanded="false"
+          aria-controls="navbar-menu">
+            <img 
+            src="images/icons/menu_hamburger.svg" alt=""class="icon-hamburger">
+
+            <img 
+              src="images/icons/cross.svg" 
+              alt="" class="icon-close">
+          </button>--> 
+
+        <!-- Checkbox nascosto per CSS menu hack (no JS) -->
+        <input type="checkbox" id="menu-toggle" class="navbar-checkbox">
+        
+        <label
+          class="navbar-toggle"
+          for="menu-toggle"
+          aria-label="Apri menu">
+          <img 
+            src="assets/images/icons/menu_hamburger.svg" alt="" class="icon-hamburger">
+          <img 
+            src="assets/images/icons/cross.svg" 
+            alt="" class="icon-close">
+        </label>
+
+      <!-- Menu -->
+          <div class="navbar-menu" id="navbar-menu" aria-hidden="true">
+            
+              <ul class="navbar-links">
+                  <li><a href="index.html" aria-current="page">Home</a></li>
+                  <li><a href="resume.html">Resume</a></li>
+                  <li><a href="about-contact.html">About &amp; Contact</a></li>
+              </ul>
+
+              <!-- Language switch -->
+              <div class="lang-switch" role="navigation" aria-label="Selezione lingua">
+                  <img src="assets/images/icons/world.svg" alt="" aria-hidden="true">
+                  <a href="index.html" class="lang lang-it is-active">IT</a>
+                  <span class="divider">|</span>
+                  <a href="index-en.html" class="lang lang-en">EN</a>
+              </div>
+
+          </div>
+          </div>
+      </nav>
+    </header>
+
+  <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="top">
+        <div class="hero-container">
+
+          <!-- Testo -->
+          <div class="hero-content">
+            <h1 class="hero-title">Ciao, sono Maria!</h1>
+
+            <p class="hero-text">
+              <span class="hero-lead">
+              Progetto esperienze digitali inclusive, dove tecnologia e umanità si incontrano.
+              </span><br>
+              Unisco UX/UI Design, accessibilità e AI all'empatia interculturale e al pensiero critico per creare soluzioni che funzionano davvero.
+            </p>
+
+            <!--cta-->
+            <div class="hero-actions"> 
+              <a href="#contact" class="btn btn-primary">
+                LET'S CHAT!     
+              </a>
+
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/maria-lostorto"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo LinkedIn">
+                <img src="assets/images/icons/linkedin.svg" alt="LinkedIn">
+              </a>
+            </div>
+          </div>
+
+          <!-- Immagine -->
+          <div class="hero-image">
+            <picture>
+              <source srcset="assets/images/hero_homepage_desktop.webp" media="(min-width: 992px)" type="image/webp">
+              <source srcset="assets/images/hero_homepage_mobile.webp" type="image/webp">
+              <source srcset="assets/images/hero_homepage_desktop.png" media="(min-width: 992px)">
+              <img src="assets/images/hero_homepage_mobile.png" alt="Foto di Maria" fetchpriority="high">
+            </picture>
+          </div>
+
+        </div>
+
+        <!-- Back to top -->
+          <a href="#top" class="back-to-top" aria-label="Torna all'inizio della pagina">
+              <img src="assets/images/icons/arrow_top.svg" alt="freccia su">
+        </a>
+
+      </section>
+
+      <!-- About -->
+      <section class="about" id="about">  
+        <div class="about-container">
+
+        <!-- Testo -->
+        <div class="about-content">
+          <h2 class="about-title">About me</h2>
+          <p class="about-text">
+            Dal turismo al volontariato internazionale (ESC) fino all'<strong>UX Design</strong>, reinventarmi è il mio tratto distintivo. Il mio <strong>background unconventional</strong> mi permette di empatizzare con utenti diversi e progettare esperienze digitali che funzionano. Sto ampliando <strong>le mie competenze in UX/UI, accessibilità e AI,</strong> unendo pratica e pensiero critico.Vuoi scoprire come trasformo idee in esperienze digitali?
+          </p>
+
+          <!--cta-->
+          <div class="about-actions"> 
+            <a href="about-contact.html" class="btn btn-secondary">
+            Scopri di più su di me
+            <img src="assets/images/icons/arrow_right.svg" alt="" aria-hidden="true">
+            </a> 
+          </div>
+        </div>
+        </div>
+      </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-container">
+
+          <!-- Testo -->
+          <div class="portfolio-content">
+            <h2 class="portfolio-title">Portfolio</h2>
+            <p class="portfolio-text">
+              Una selezione di progetti in evoluzione, guidati da ricerca e intenzione.  
+            </p>
+          </div> 
+
+          <!-- cards  -->
+          <div class="portfolio-grid">
+            
+            <!-- card 1  -->
+            <article class="card"> 
+                <a href="https://www.behance.net/gallery/243161485/UXUI-Design-Redesign-Ecodream" class="card-link-wrapper" target="_blank" rel="noopener" aria-label="Apri il progetto Ecodream">
+                  <img src="assets/images/portfolio/UX_UI_Redesign_ecodream.webp" class="card-image" alt="Anteprima progetto Ecodream">
+                </a>
+
+                <div class="card-body">
+                  <div class="card-text-container"> 
+
+                    <div class="card-labels"> 
+                      <span class="eyebrow">UX/UI DESIGN REDESIGN</span>
+                      <p class="tagline">Improving usability in a complex flow</p>
+                    </div>
+
+                    <h3 class="card-title">Ecodream</h3>
+                    <p class="card-text">Un progetto di UX/UI redesign che affronta criticità di accessibilità e usabilità, allineando l'esperienza digitale ai valori eco-chic e inclusivi del brand.</p>
+
+                  </div>
+
+                  <a href="https://www.behance.net/gallery/243161485/UXUI-Design-Redesign-Ecodream" 
+                  class="btn btn-secondary" target="_blank" rel="noopener">Scopri il progetto <img src="assets/images/icons/arrow_right.svg" alt="" aria-hidden="true">
+                  </a>
+                </div>
+            </article> 
+
+            <!-- card 2  -->
+            <article class="card">
+                <a href="https://www.behance.net/gallery/243163699/BRAND-IDENTITY-VISUAL-STRATEGY-MeditActive" class="card-link-wrapper" target="_blank" rel="noopener" aria-label="Apri il progetto MeditActive">
+                  <img src="assets/images/portfolio/Brand_identity_visual_strategy_MeditActive.webp" class="card-image" alt="Anteprima progetto MeditActive">
+                </a>
+                
+                <div class="card-body">
+                  <div class="card-text-container"> 
+
+                    <div class="card-labels"> 
+                      <span class="eyebrow">BRAND IDENTITY & VISUAL STRATEGY</span>
+                      <p class="tagline">Clarifying values for a growing brand</p>
+                    </div>
+
+                    <h3 class="card-title">MeditActive</h3>
+                    <p class="card-text">Sviluppo di una brand identity per un'app di wellness: dal logo ai social, con focus su riconoscibilità, armonia e user engagement.</p>
+
+                  </div>
+
+                  <a href="https://www.behance.net/gallery/243163699/BRAND-IDENTITY-VISUAL-STRATEGY-MeditActive" 
+                  class="btn btn-secondary" target="_blank" rel="noopener">Scopri il progetto <img src="assets/images/icons/arrow_right.svg" alt="" aria-hidden="true">
+                  </a>
+                </div> 
+            </article> 
+              
+            </div>
+          </div>
+        </section>
+
+    <!-- Infinite Slider -->
+         <section class="marquee" aria-label="Infinite Slider - Junior UX Designer">
+            <div class="marquee__viewport">
+                <div class="marquee__track">
+                <p class="marquee__content">
+                    Junior UX Designer — User before interface — Don't reinvent the wheel — Junior by title, serious by method —
+                </p><!--
+                --><p class="marquee__content" aria-hidden="true">
+                    Junior UX Designer — User before interface — Don't reinvent the wheel — Junior by title, serious by method —
+                </p>
+                </div>
+            </div>
+        </section>
+
+    <!-- Form -->
+        <section class="form-section" id="contact">
+            <div class="form-container">
+                <div class="form-content">
+                    <h2 class="form-title">Facciamo due chiacchiere?</h2>
+                    <p class="form-text">
+                        Vuoi creare design più accessibili e centrati sull'utente? <br>
+                        Connettiamoci e vediamo cosa possiamo realizzare insieme!
+                    </p>
+                </div>
+                
+
+                <form id="contact-form" action="#" method="POST" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="nome" name="user_name" class="form-control" placeholder=" " autocomplete="name" required>
+                        <label for="nome" class="form-label">Nome</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="user_email" class="form-control" placeholder=" " autocomplete="email" required>
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="messaggio" name="message" class="form-control" rows="5" placeholder=" " required></textarea>
+                        <label for="messaggio" class="form-label">Messaggio</label>
+                    </div>
+
+                    <div class="honeypot" aria-hidden="true">
+                        <label for="last_name_confirm">Lascia vuoto</label>
+                        <input type="text" id="last_name_confirm" name="last_name_confirm" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">INVIA</button>
+
+                    <p class="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+  </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+       <div class="footer-header">
+
+          <!-- Logo -->
+          <a href="index.html" class="footer-logo" aria-label="Vai alla home">
+            <img
+              src="assets/images/logo/logo.svg"
+              alt="Logo Maria Lostorto"
+            >
+          </a>
+
+            <!-- Social links -->
+            <div class="footer-socials">
+              <a
+                href="https://www.linkedin.com/in/maria-lostorto"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo LinkedIn">
+                <img src="assets/images/icons/linkedin_footer.svg" alt="LinkedIn" class="icon">
+              </a>
+
+              <a
+                href="https://www.behance.net/marialostorto"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo Behance">
+                <img src="assets/images/icons/behance.svg" alt="Behance" class="icon icon-behance"> 
+              </a>
+
+              <a
+                href="https://github.com/marylost" 
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo GitHub">
+                <img src="assets/images/icons/github.svg" alt="GitHub" class="icon">
+              </a> 
+
+              <a
+                href="https://www.instagram.com/maria_lost_/"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo Instagram">
+                <img src="assets/images/icons/instagram.svg" alt="Instagram" class="icon">
+              </a>
+            </div>
+       </div>
+
+        <!-- Divider -->
+        <hr class="footer-divider" aria-hidden="true">
+
+        <p class="footer-copyright">
+          © 2026 Maria Lostorto. All rights reserved.
+          </p>	
+      </div>
+    </footer>
+
+    <!--EmailJS-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script> emailjs.init("pPt9ZRAxRTp_IWPXr"); </script>
+
+    <!--Link a JS-->
+    <script src="src/js/main.js"></script>
+    
+  </body>
+</html>

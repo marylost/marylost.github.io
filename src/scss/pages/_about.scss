@@ -1,0 +1,295 @@
+// ============================================================
+// PAGES / ABOUT & CONTACT
+// ============================================================
+
+.about-page {
+
+  // --- Hero ---
+  .hero {
+    padding: 48px 16px;
+    background: transparent;
+
+    .hero-container {
+      display: grid;
+      grid-template-areas: "image" "content" "actions";
+      gap: 24px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .hero-image {
+      grid-area: image;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img { width: 329px; height: 234px; object-fit: cover; display: block; }
+    }
+
+    .hero-content {
+      grid-area: content;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .hero-title {
+      margin: 0;
+      text-align: center;
+      font-family: $font-display;
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 600;
+      color: $secondary-500;
+    }
+
+    .hero-text {
+      margin: 0;
+      text-align: center;
+      font-family: $font-body;
+      font-size: 16px;
+      line-height: 26px;
+      color: $black;
+    }
+
+    .hero-actions {
+      grid-area: actions;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+
+      .btn-primary {
+        width: 100%;
+        max-width: 560px;
+        box-sizing: border-box;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+
+    @include desktop {
+      padding: 36px 150px;
+
+      .hero-container {
+        display: grid;
+        grid-template-columns: 488px 1fr;
+        grid-template-areas: "image content" "image actions";
+        column-gap: 65px;
+        row-gap: 22px;
+        max-width: 1440px;
+        margin: 0 auto;
+        align-items: start;
+      }
+
+      .hero-image {
+        grid-area: image;
+        justify-content: flex-start;
+        img { width: 488px; height: 488px; }
+      }
+
+      .hero-content { grid-area: content; gap: 24px; }
+
+      .hero-title { text-align: left; font-size: 56px; line-height: 64px; font-weight: 700; }
+
+      .hero-text { text-align: left; font-size: 20px; line-height: 30px; }
+
+      .hero-actions {
+        grid-area: actions;
+        justify-content: flex-end;
+        .btn-primary { width: auto; max-width: 100%; padding: 22px 44px; font-size: 20px; }
+      }
+    }
+  }
+}
+
+// ============================================================
+// BEYOND PORTFOLIO
+// ============================================================
+
+.beyond-portfolio { width: 100%; }
+
+.beyond-container {
+  max-width: 100%;
+  padding: 48px 16px;
+  box-sizing: border-box;
+}
+
+.beyond-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+}
+
+.beyond-content {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.beyond-title {
+  font-family: $font-display;
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+  color: $secondary-500;
+  margin: 0;
+}
+
+// --- Card base ---
+.beyond-grid .card {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 18px;
+  background-color: transparent;
+  @include card-shadow;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px;
+
+  .card-image { width: 100%; border-radius: 0; box-shadow: none; margin-bottom: 0; }
+
+  &:nth-child(2) { padding: 20px; align-items: center; text-align: center; gap: 16px; }
+
+  .title {
+    font-family: $font-display;
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 500;
+    color: $black;
+    margin: 0;
+  }
+
+  .info { display: flex; flex-direction: column; gap: 4px; }
+
+  .song-name,
+  .artist {
+    font-family: $font-body;
+    font-size: 16px;
+    line-height: 26px;
+    font-style: italic;
+    color: $neutral-700;
+    margin: 0;
+  }
+
+  .album-art {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .card-image { width: 100%; max-width: 280px; height: auto; border-radius: 12px; display: block; }
+  }
+
+  &:nth-child(4) { padding: 22px; align-items: center; text-align: center; gap: 16px; }
+
+  .quote-container { width: 100%; }
+
+  .quote-text {
+    font-family: $font-body;
+    font-size: 16px;
+    line-height: 26px;
+    font-style: italic;
+    color: $neutral-900;
+    display: block;
+    quotes: none;
+  }
+
+  &:nth-child(5) {
+    padding: 22px;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+
+    .photo-container {
+      margin: 0 -22px -22px -22px;
+      img { border-radius: 0 0 18px 18px; }
+    }
+  }
+
+  .photo-container {
+    margin: 0;
+    width: 100%;
+    img { width: 100%; height: auto; border-radius: 10px; display: block; object-fit: cover; }
+  }
+}
+
+.music-card-link { display: block; width: 100%; max-width: 280px; }
+
+.beyond-col-2 { display: flex; flex-direction: column; gap: 44px; }
+
+// --- Card libri ---
+#cards_books {
+  padding: 22px 22px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  @include card-shadow;
+  border-radius: 18px;
+
+  .title { text-align: center; margin-bottom: 16px; }
+
+  .books-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: auto;
+  }
+
+  .book-cover {
+    width: 143px;
+    height: 179px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    display: block;
+    @include card-shadow;
+  }
+}
+
+// --- Desktop ---
+@include desktop {
+  .beyond-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 36px 150px;
+  }
+
+  .beyond-content { width: 100%; text-align: center; margin-bottom: 0; }
+
+  .beyond-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 32px;
+    align-items: stretch;
+  }
+
+  .beyond-col-1,
+  .beyond-col-2,
+  .beyond-col-3 { display: flex; flex-direction: column; }
+
+  .beyond-col-1 { gap: 32px; .card { padding: 24px; } }
+  .beyond-col-2 { gap: 16px; .card { padding: 24px; } }
+
+  #cards_books { padding-bottom: 0; }
+
+  .beyond-col-3 {
+    .card {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 22px;
+    }
+
+    .photo-container {
+      flex: 1;
+      margin: 0;
+      display: flex;
+      img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; display: block; }
+    }
+  }
+}

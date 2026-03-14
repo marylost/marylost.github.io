@@ -1,0 +1,87 @@
+// ============================================================
+// ABSTRACTS / VARIABLES
+// ============================================================
+
+// --- Colori Primary ---
+$primary-50:  #FDF2F1;
+$primary-100: #F9E4E2;
+$primary-200: #F1C9C5;
+$primary-300: #E19F9A;
+$primary-400: #BD6B66;
+$primary-500: #5E1010;
+$primary-600: #520C0C;
+$primary-700: #450808;
+$primary-800: #370505;
+$primary-900: #290303;
+
+// --- Colori Secondary ---
+$secondary-50:  #F7E8E3;
+$secondary-100: #F0D0C6;
+$secondary-200: #E6A085;
+$secondary-300: #C37957;
+$secondary-400: #A6634B;
+$secondary-500: #663D2A;
+$secondary-600: #533121;
+$secondary-700: #412518;
+$secondary-800: #301A10;
+$secondary-900: #1F0F08;
+
+// --- Colori Tertiary ---
+$tertiary-50:  #FFFCF9;
+$tertiary-100: #FFF4E1;
+$tertiary-200: #FFEFD2;
+$tertiary-300: #FFE9C1;
+$tertiary-400: #FFE2B1;
+$tertiary-500: #FFECCC;
+$tertiary-600: #FDCF81;
+$tertiary-700: #C9A66B;
+$tertiary-800: #8E7140;
+$tertiary-900: #574424;
+
+// --- Colori Neutral ---
+$neutral-50:  #FAF9F9;
+$neutral-100: #F4F1F1;
+$neutral-200: #E9E4E4;
+$neutral-300: #D9D2D2;
+$neutral-400: #BDB3B3;
+$neutral-500: #9C8E8E;
+$neutral-600: #7D7171;
+$neutral-700: #5F5555;
+$neutral-800: #423A3A;
+$neutral-900: #262121;
+
+// --- Colori Semantici ---
+$success-500: #10B981;
+$warning-500: #F59E0B;
+$error-500:   #EF4444;
+
+// --- Base ---
+$white: #FCFCFC;
+$black: #252525;
+
+// --- Font ---
+$font-display: 'Outfit', sans-serif;
+$font-body:    'Roboto', sans-serif;
+
+// --- Spaziature ---
+$space-2xxs: 2px;
+$space-2xs:  4px;
+$space-xs:   6px;
+$space-s:    8px;
+$space-m:    12px;
+$space-l:    16px;
+$space-xl:   20px;
+$space-2xl:  24px;
+$space-3xl:  32px;
+$space-4xl:  36px;
+$space-5xl:  40px;
+$space-6xl:  48px;
+$space-7xl:  56px;
+$space-8xl:  64px;
+$space-9xl:  72px;
+$space-10xl: 80px;
+$space-11xl: 96px;
+$space-12xl: 112px;
+
+// --- Breakpoint ---
+$bp-desktop: 992px;

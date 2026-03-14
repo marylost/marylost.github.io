@@ -1,0 +1,107 @@
+// ============================================================
+// LAYOUT / FOOTER
+// ============================================================
+
+.footer {
+  background: $tertiary-50;
+  margin-top: 48px;
+  box-shadow: 0 -8px 20px rgba(166, 99, 75, 0.2);
+
+  .footer-container {
+    padding: 32px 16px;
+    box-sizing: border-box;
+  }
+
+  .footer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 53px;
+    height: 51.34px;
+    display: block;
+  }
+
+  .footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    &:focus { outline: none; }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      display: block;
+      @include transition(filter 0.3s ease, transform 0.3s ease);
+    }
+
+    .icon-behance,
+    [alt="Behance"] {
+      width: 32px;
+      height: 20px;
+      margin-top: 8px;
+    }
+
+    &:hover,
+    &:focus {
+      img {
+        filter: drop-shadow(1px 3px 4px rgba(166, 99, 75, 1));
+        transform: translateY(-3px);
+      }
+
+      img[alt="Behance"] { transform: translateY(-3px) scale(1.05); }
+    }
+
+    &:active img {
+      filter: brightness(0) saturate(100%) invert(10%) sepia(47%) saturate(3688%) hue-rotate(345deg) brightness(72%) contrast(103%);
+      transform: translateY(0);
+    }
+  }
+
+  .footer-divider {
+    height: 0.6px;
+    background: $secondary-500;
+    margin: 32px 0;
+    width: 100%;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    margin: 0;
+    font-family: $font-body;
+    font-size: 12px;
+    line-height: 20px;
+    color: $black;
+  }
+
+  @include desktop {
+    .footer-container  { padding: 36px 150px; margin-top: 72px; }
+    .footer-logo img   { width: 108px; height: 102.68px; }
+    .footer-socials    { gap: 22px; }
+
+    .btn-icon {
+      .icon { width: 36px; height: 36px; }
+      .icon-behance,
+      [alt="Behance"] { width: 44px; height: 27px; margin-top: 8px; }
+    }
+
+    .footer-divider    { margin: 36px 0; }
+    .footer-copyright  { font-size: 16px; line-height: 26px; }
+  }
+}

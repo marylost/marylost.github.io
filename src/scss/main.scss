@@ -1,0 +1,29 @@
+// ==============================================================
+// MAIN.SCSS — PORTFOLIO MARIA LOSTORTO
+// Pattern 7-1
+// ==============================================================
+
+// 1. ABSTRACTS — variabili, mixin, placeholder
+//    (nessun CSS generato, solo strumenti riutilizzabili)
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins'    as *;
+@use 'abstracts/placeholders';
+
+// 2. BASE — reset, tipografia
+@use 'base/reset';
+@use 'base/typography';
+
+// 3. COMPONENTS — elementi UI riutilizzabili
+@use 'components/buttons';
+@use 'components/icons';
+@use 'components/navbar';
+@use 'components/marquee';
+@use 'components/form';
+
+// 4. LAYOUT — strutture globali di pagina
+@use 'layout/footer';
+
+// 5. PAGES — stili specifici per ogni pagina
+@use 'pages/home';
+@use 'pages/resume';
+@use 'pages/about';

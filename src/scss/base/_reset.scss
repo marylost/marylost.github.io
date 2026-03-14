@@ -1,0 +1,22 @@
+// ============================================================
+// BASE / RESET
+// ============================================================
+
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+
+  @include desktop {
+    scroll-padding-top: 140px;
+  }
+}
+
+body {
+  font-family: $font-body;
+  font-size: 16px;
+  line-height: 26px;
+  color: $neutral-900;
+  background-color: $tertiary-50;
+  margin: 0;
+  padding: 0;
+}

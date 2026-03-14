@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="robots" content="index, follow">
+      <meta name="description" content="Portfolio di Maria Lostorto">
+
+      <title>About & Contact | Portfolio Maria Lostorto</title>
+
+        <!-- Google Fonts con preload -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap">
+
+      <link rel="stylesheet" href="src/vendor/bootstrap-grid.css"> <!--questo è la grid di bootstrap-->
+      <link rel="stylesheet" href="dist/css/style.css">  <!--questo è il collegamento al file css-->
+      
+      
+      <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+      <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+      <link rel="manifest" href="assets/favicon/site.webmanifest" /> <!--questo è la favicon-->
+
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://marylost.github.io/Portfolio-di-Maria-Lostorto/about-contact.html">
+      <meta property="og:title" content="About & Contact | Maria Lostorto">
+      <meta property="og:description" content="Scopri chi è Maria Lostorto e contattala per collaborazioni e progetti.">
+      <meta property="og:image" content="https://marylost.github.io/Portfolio-di-Maria-Lostorto/assets/images/og-image.jpg">
+      <meta property="og:image:alt" content="Maria Lostorto – Junior UX/UI Designer">
+
+  </head>
+
+<body class="about-page">
+        <!-- Navbar -->
+        <header class="site-header">
+        <nav class="navbar" role="navigation" aria-label="Navigazione principale">
+            <div class="navbar-inner">
+
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand" aria-label="Vai alla home">
+            <img 
+                src="assets/images/logo/logo.svg" 
+                alt="Logo Maria Lostorto"
+                class="nav-logo"
+            >
+        </a>
+
+        <!-- Checkbox nascosto per CSS menu hack (no JS) -->
+        <input type="checkbox" id="menu-toggle" class="navbar-checkbox">
+
+        <!-- Hamburger menu (mobile) -->
+        <label
+          class="navbar-toggle"
+          for="menu-toggle"
+          aria-label="Apri menu">
+          <img 
+            src="assets/images/icons/menu_hamburger.svg" alt="" class="icon-hamburger">
+          <img 
+            src="assets/images/icons/cross.svg" 
+            alt="" class="icon-close">
+        </label>
+
+        <!-- Menu -->
+            <div class="navbar-menu" id="navbar-menu" aria-hidden="true">
+                
+                <ul class="navbar-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="about-contact.html" aria-current="page">About &amp; Contact</a></li>
+                </ul>
+
+                <!-- Language switch -->
+                <div class="lang-switch" role="navigation" aria-label="Selezione lingua">
+                    <img src="assets/images/icons/world.svg" alt="" aria-hidden="true">
+                    <a href="about-contact.html" class="lang lang-it is-active">IT</a>
+                    <span class="divider" aria-hidden="true">|</span>
+                    <a href="about-contact-en.html" class="lang lang-en">EN</a>
+                </div>
+
+            </div>
+            </div>
+        </nav>
+        </header>
+    
+    <main id="main">
+
+        <!-- Hero -->
+        <section class="hero" id="top">
+             <div class="hero-container">
+
+                <!-- Titolo + Testo -->
+                <div class="hero-content">
+                <h1 class="hero-title">About me</h1>
+                <p class="hero-text">
+                    Molti usano questa sezione per presentarsi. Io preferisco usarla per raccontare chi sto diventando.<br>
+                    Il mio percorso non è lineare: mi sono reinventata più volte, esplorando ambiti diversi per capire cosa mi appassiona davvero.<br>
+                    Ho scoperto che il design è il mio habitat naturale proprio perché, come me, non è mai statico: cambia ed evolve con le persone.<br>
+                    Nei progetti porto curiosità, capacità di adattamento e il desiderio di crescere continuamente, più che un punto di arrivo.
+                </p>
+                </div>
+
+                <!--cta-->
+                <div class="hero-actions"> 
+                    <a href="#contact" class="btn btn-primary">
+                        LET'S CHAT!     
+                    </a>
+                </div>
+
+                <!-- Immagine -->
+                <div class="hero-image">
+                    <picture>
+                        <source srcset="assets/images/about_contact_hero.webp" type="image/webp">
+                        <img 
+                            src="assets/images/about_contact_hero.png" 
+                            alt="Ritratto di Maria Lostorto"
+                            loading="lazy">
+                    </picture>
+                </div>
+             </div>
+        </section>
+        
+        <!--Beyond Portfolio -->
+        <section class="beyond-portfolio" id="beyond-portfolio">
+        <div class="beyond-container">
+
+            <div class="beyond-grid">
+
+                <!-- COLONNA 1: titolo + music card -->
+                <div class="beyond-col-1">
+                    <div class="beyond-content">
+                        <h2 class="beyond-title">Beyond Portfolio</h2>
+                    </div>
+
+                    <!-- Card 1 -->
+                    <article class="card">
+                        <h3 class="title">"Soundtrack of my life"</h3>
+                        <div class="info">
+                            <p class="song-name">Where is my husband?</p>
+                            <p class="artist">By Raye</p>
+                        </div>
+
+                        <div class="album-art">
+                            <a href="https://youtu.be/rK5TyISxZ_M?si=jqAl3CB4pQ191KS1" target="_blank" rel="noopener noreferrer" class="music-card-link">
+                                <picture>
+                                    <source srcset="assets/images/music.webp" type="image/webp">
+                                    <img src="assets/images/music.png" class="card-image" alt="Cover canzone Where is my husband di Raye">
+                                </picture>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 2/3 -->
+                <div class="beyond-col-2">
+                    <article class="card" id="cards_books">
+                        <h3 class="title">Cosa sto leggendo</h3>
+                        <div class="books-container">
+                            <picture>
+                                <source srcset="assets/images/libro_1.webp" type="image/webp">
+                                <img src="assets/images/libro_1.png" alt="La campana di vetro" class="book-cover">
+                            </picture>
+                            <picture>
+                                <source srcset="assets/images/libro_2.webp" type="image/webp">
+                                <img src="assets/images/libro_2.png" alt="Anathema" class="book-cover">
+                            </picture>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="title">Citazione del mese</h3>
+                        <div class="quote-container">
+                            <q class="quote-text">
+                                As long as I'm alive, I can begin again<br>
+                                and again and again and again
+                            </q>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="beyond-col-3">
+                    <article class="card">
+                        <h3 class="title">Un luogo che amo</h3>
+                        <figure class="photo-container">
+                            <picture>
+                                <source srcset="assets/images/girls.webp" type="image/webp">
+                                <img src="assets/images/girls.png" alt="Amiche di Maria a Cracovia">
+                            </picture>
+                        </figure>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- Infinite Slider -->
+        <section class="marquee" aria-label="Infinite Slider - Junior UX Designer">
+            <div class="marquee__viewport">
+                <div class="marquee__track">
+                <p class="marquee__content">
+                    Junior UX Designer — User before interface — Don't reinvent the wheel — Junior by title, serious by method —
+                </p><!--
+                --><p class="marquee__content" aria-hidden="true">
+                    Junior UX Designer — User before interface — Don't reinvent the wheel — Junior by title, serious by method —
+                </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form -->
+        <section class="form-section" id="contact">
+            <div class="form-container">
+                <div class="form-content">
+                    <h2 class="form-title">Facciamo due chiacchiere?</h2>
+                    <p class="form-text">
+                        Vuoi creare design più accessibili e centrati sull'utente? <br>
+                        Connettiamoci e vediamo cosa possiamo realizzare insieme!
+                    </p>
+                </div>
+                
+                <form id="contact-form" action="#" method="POST" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="nome" name="user_name" class="form-control" placeholder=" " autocomplete="name" required>
+                        <label for="nome" class="form-label">Nome</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="user_email" class="form-control" placeholder=" " autocomplete="email" required>
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="messaggio" name="message" class="form-control" rows="5" placeholder=" " required></textarea>
+                        <label for="messaggio" class="form-label">Messaggio</label>
+                    </div>
+
+                    <div class="honeypot" aria-hidden="true">
+                        <label for="last_name_confirm">Lascia vuoto</label>
+                        <input type="text" id="last_name_confirm" name="last_name_confirm" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">INVIA</button>
+
+                    <p class="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+       <div class="footer-header">
+
+          <!-- Logo -->
+          <a href="index.html" class="footer-logo" aria-label="Vai alla home">
+            <img
+              src="assets/images/logo/logo.svg"
+              alt="Logo Maria Lostorto"
+            >
+          </a>
+
+            <!-- Social links -->
+            <div class="footer-socials">
+              <a
+                href="https://www.linkedin.com/in/maria-lostorto"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo LinkedIn">
+                <img src="assets/images/icons/linkedin_footer.svg" alt="LinkedIn" class="icon">
+              </a>
+
+              <a
+                href="https://www.behance.net/marialostorto"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo Behance">
+                <img src="assets/images/icons/behance.svg" alt="Behance" class="icon icon-behance"> 
+              </a>
+
+              <a
+                href="https://github.com/marylost" 
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo GitHub">
+                <img src="assets/images/icons/github.svg" alt="GitHub" class="icon">
+              </a> 
+
+              <a
+                href="https://www.instagram.com/maria_lost_/"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-icon"
+                aria-label="Visita il mio profilo Instagram">
+                <img src="assets/images/icons/instagram.svg" alt="Instagram" class="icon">
+              </a>
+            </div>
+       </div>
+
+        <!-- Divider -->
+        <hr class="footer-divider" aria-hidden="true">
+
+        <p class="footer-copyright">
+          © 2026 Maria Lostorto. All rights reserved.
+          </p>	
+      </div>
+    </footer>
+
+    <!--EmailJS-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script> emailjs.init("pPt9ZRAxRTp_IWPXr"); </script>
+
+    <!--Link a JS-->
+    <script src="src/js/main.js"></script>
+</body>
+</html>
