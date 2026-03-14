@@ -5,6 +5,12 @@
 This repository contains my personal portfolio website, created to showcase my work, skills, and projects as a designer and developer.
 The portfolio is designed to present my professional profile and selected projects to companies, recruiters, and collaborators.
 I design inclusive digital experiences where technology and humanity meet.  
+---
+
+## Preview
+<p align="center">
+  <img src="assets/images/og-image.jpg" width="900">
+</p>
 
 ---
 
@@ -47,15 +53,6 @@ The portfolio is published online using GitHub Pages.
 
 Website:
 https:
-
----
-
-## Preview
-
-![Portfolio Preview](assets/images/og-image.jpg)
-<p align="center">
-  <img src="assets/images/og-image.jpg" width="900">
-</p>
 
 ---
 
